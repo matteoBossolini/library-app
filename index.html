@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        
+        <p>Hi, this is a simple JS app that emulate a library.<br>
+            You can add a book and update its statust from unread to read.
+            Note that the book will not be saved online neither in your browser.
+        </p>
+
+        <form>
+            <input type="text" id="name" placeholder="book name" />
+            <input type="text" id="author" placeholder="author" />
+            <input type="submit" id="newBookButton" value="Add new book"/>
+        </form>
+
+        <div id="libraryView">
+            <table id="libraryTable">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Read?</th>
+                    </tr>
+                </thead>
+                <tbody id="libraryTableBody">
+
+                </tbody>
+            </table>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
